@@ -411,6 +411,7 @@
 				229A2C721BAF081900D5BD29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229A2C731BAF081900D5BD29 /* Build configuration list for PBXNativeTarget "Genetic CodeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				229A2C751BAF081900D5BD29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
