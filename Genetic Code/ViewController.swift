@@ -43,6 +43,51 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func cPressed(sender: AnyObject) {
+        var currentText = sequenceLabel.text;
+        var lengthOfText = currentText?.characters.count;
+        
+        if ((lengthOfText >= 3) || (lengthOfText == 0)){
+            sequenceLabel.text = "";
+            sequenceLabel.text = "c";
+        }
+        else {
+            sequenceLabel.text = currentText! + "c";
+        }
+
+    }
+    
+    @IBAction func tPressed(sender: AnyObject) {
+        var currentText = sequenceLabel.text;
+        var lengthOfText = currentText?.characters.count;
+        
+        if ((lengthOfText >= 3) || (lengthOfText == 0)){
+            sequenceLabel.text = "";
+            sequenceLabel.text = "t";
+        }
+        else {
+            sequenceLabel.text = currentText! + "t";
+        }
+
+    }
+    
+    @IBAction func pPressed(sender: AnyObject) {
+        var currentText = sequenceLabel.text;
+        var lengthOfText = currentText?.characters.count;
+        
+        if ((lengthOfText >= 3) || (lengthOfText == 0)){
+            sequenceLabel.text = "";
+            sequenceLabel.text = "p";
+        }
+        else {
+            sequenceLabel.text = currentText! + "p";
+        }
+
+    }
+    
+    
+    
+    
     @IBAction func resetPressed(sender: AnyObject) {
         sequenceLabel.text = "";
     }
