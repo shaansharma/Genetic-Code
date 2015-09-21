@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func resetPressed(sender: AnyObject) {
-        sequenceLabel.text = "";
+        sequenceLabel.text = "Choose Sequences";
     }
     
     
