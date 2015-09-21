@@ -13,6 +13,7 @@
 		229A2C5E1BAF081900D5BD29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229A2C5D1BAF081900D5BD29 /* Images.xcassets */; };
 		229A2C611BAF081900D5BD29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229A2C5F1BAF081900D5BD29 /* LaunchScreen.xib */; };
 		229A2C6D1BAF081900D5BD29 /* Genetic_CodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A2C6C1BAF081900D5BD29 /* Genetic_CodeTests.swift */; };
+		22F96C491BAF836A003A3CE7 /* codonAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		229A2C661BAF081900D5BD29 /* Genetic CodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Genetic CodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		229A2C6B1BAF081900D5BD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229A2C6C1BAF081900D5BD29 /* Genetic_CodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genetic_CodeTests.swift; sourceTree = "<group>"; };
+		22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = codonAnswerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				229A2C561BAF081900D5BD29 /* AppDelegate.swift */,
 				229A2C581BAF081900D5BD29 /* ViewController.swift */,
 				229A2C5A1BAF081900D5BD29 /* Main.storyboard */,
+				22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */,
 				229A2C5D1BAF081900D5BD29 /* Images.xcassets */,
 				229A2C5F1BAF081900D5BD29 /* LaunchScreen.xib */,
 				229A2C541BAF081900D5BD29 /* Supporting Files */,
@@ -215,6 +218,7 @@
 			files = (
 				229A2C591BAF081900D5BD29 /* ViewController.swift in Sources */,
 				229A2C571BAF081900D5BD29 /* AppDelegate.swift in Sources */,
+				22F96C491BAF836A003A3CE7 /* codonAnswerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

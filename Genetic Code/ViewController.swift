@@ -86,6 +86,10 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func donePressed(sender: AnyObject) {
+        var currentSequence = sequenceLabel.text;
+        
+    }
     
     
     @IBAction func resetPressed(sender: AnyObject) {

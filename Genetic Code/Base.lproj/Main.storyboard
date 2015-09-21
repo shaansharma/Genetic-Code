@@ -64,6 +64,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywu-El-PZf"/>
                                     <segue destination="tDl-a8-m3h" kind="show" id="poQ-Le-sfc"/>
                                 </connections>
                             </button>
@@ -125,7 +126,7 @@
         <!--Codon-->
         <scene sceneID="rXk-vU-Mis">
             <objects>
-                <viewController id="tDl-a8-m3h" sceneMemberID="viewController">
+                <viewController id="tDl-a8-m3h" customClass="codonAnswerController" customModule="Genetic_Code" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9AV-0j-Ool"/>
                         <viewControllerLayoutGuide type="bottom" id="BJx-O3-3Z3"/>
@@ -141,7 +142,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-rk-KMH">
-                                <rect key="frame" x="167" y="211" width="286" height="132"/>
+                                <rect key="frame" x="65" y="215" width="286" height="132"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -150,6 +151,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Codon" id="pna-Rc-4ge"/>
+                    <connections>
+                        <outlet property="codonAnswerLabel" destination="ihj-rk-KMH" id="VKY-A2-rSO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2y-pl-ylN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
