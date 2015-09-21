@@ -32,17 +32,20 @@ class ViewController: UIViewController {
     @IBAction func aPressed(sender: AnyObject) {
         
         var currentText = sequenceLabel.text;
-        var lengthOfText =
+        var lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
             sequenceLabel.text = "a";
         }
         else {
-            sequenceLabel.text?.append(a: Character);
+            sequenceLabel.text = currentText! + "a";
         }
     }
     
+    @IBAction func resetPressed(sender: AnyObject) {
+        sequenceLabel.text = "";
+    }
     
     
 
