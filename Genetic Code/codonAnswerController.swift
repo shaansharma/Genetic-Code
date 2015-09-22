@@ -24,7 +24,7 @@ class codonAnswerController: UIViewController {
     }
     
     func codonTranslate (codonIn: String) -> String{
-        return "TESTING";
+        return codonIn;
     }
     
 
