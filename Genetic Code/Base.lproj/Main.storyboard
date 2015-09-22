@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="140"/>
+            <point key="canvasLocation" x="1390" y="-17"/>
         </scene>
         <!--Amino Acid-->
         <scene sceneID="jQS-4B-9nS">
@@ -120,7 +120,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHI-ch-b0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="892"/>
+            <point key="canvasLocation" x="359" y="964"/>
+        </scene>
+        <!--Sequence Translate-->
+        <scene sceneID="NCl-C7-wgE">
+            <objects>
+                <viewController id="beZ-ho-Qib" customClass="sequenceTranslateController" customModule="Genetic_Code" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pSg-IR-i3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="aeg-lP-x1j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Pa-x7-VUO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-mx-t70">
+                                <rect key="frame" x="35" y="411" width="212" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <segue destination="SQA-b5-aVJ" kind="show" id="Qas-ty-QDT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-Aq-Y9J">
+                                <rect key="frame" x="40" y="84" width="337" height="329"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9op-rY-Mdg"/>
+                    <navigationItem key="navigationItem" title="Sequence Translate" id="lHp-Wv-NBD"/>
+                    <connections>
+                        <outlet property="squenceTextView" destination="i1q-Aq-Y9J" id="FoZ-Kw-dvs"/>
+                        <outlet property="translateButton" destination="n8r-mx-t70" id="pgj-Kh-zaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLQ-tQ-1uM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="927"/>
+        </scene>
+        <!--Sequence Translate-->
+        <scene sceneID="fuW-rD-keb">
+            <objects>
+                <viewController id="SQA-b5-aVJ" customClass="sequenceTranslateController" customModule="Genetic_Code" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9hP-of-vv5"/>
+                        <viewControllerLayoutGuide type="bottom" id="hzx-m5-kHv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b9X-RJ-LKN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rp7-7G-qYG">
+                                <rect key="frame" x="67" y="95" width="302" height="389"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sequence Translate" id="nO9-ac-tKJ"/>
+                    <connections>
+                        <outlet property="translatedTextView" destination="rp7-7G-qYG" id="DDv-BH-VnG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7K-eN-zmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="1165"/>
         </scene>
         <!--Codon-->
         <scene sceneID="rXk-vU-Mis">
@@ -174,7 +244,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0A-2N-peg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="360"/>
+            <point key="canvasLocation" x="-139" y="135"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TQh-9I-x2r">
@@ -190,6 +260,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ild-TF-Xnz"/>
                         <segue destination="81A-c6-Kkd" kind="relationship" relationship="viewControllers" id="K65-cX-uwu"/>
+                        <segue destination="beZ-ho-Qib" kind="relationship" relationship="viewControllers" id="dnf-h3-erj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blI-aQ-7BC" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,6 +14,7 @@
 		229A2C611BAF081900D5BD29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229A2C5F1BAF081900D5BD29 /* LaunchScreen.xib */; };
 		229A2C6D1BAF081900D5BD29 /* Genetic_CodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A2C6C1BAF081900D5BD29 /* Genetic_CodeTests.swift */; };
 		22F96C491BAF836A003A3CE7 /* codonAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */; settings = {ASSET_TAGS = (); }; };
+		22F96C4B1BB1F59C003A3CE7 /* sequenceTranslateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F96C4A1BB1F59C003A3CE7 /* sequenceTranslateController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		229A2C6B1BAF081900D5BD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229A2C6C1BAF081900D5BD29 /* Genetic_CodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genetic_CodeTests.swift; sourceTree = "<group>"; };
 		22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = codonAnswerController.swift; sourceTree = "<group>"; };
+		22F96C4A1BB1F59C003A3CE7 /* sequenceTranslateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sequenceTranslateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				229A2C561BAF081900D5BD29 /* AppDelegate.swift */,
+				22F96C4A1BB1F59C003A3CE7 /* sequenceTranslateController.swift */,
 				229A2C581BAF081900D5BD29 /* ViewController.swift */,
 				229A2C5A1BAF081900D5BD29 /* Main.storyboard */,
 				22F96C481BAF836A003A3CE7 /* codonAnswerController.swift */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				229A2C591BAF081900D5BD29 /* ViewController.swift in Sources */,
+				22F96C4B1BB1F59C003A3CE7 /* sequenceTranslateController.swift in Sources */,
 				229A2C571BAF081900D5BD29 /* AppDelegate.swift in Sources */,
 				22F96C491BAF836A003A3CE7 /* codonAnswerController.swift in Sources */,
 			);
