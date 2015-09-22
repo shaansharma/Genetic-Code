@@ -88,8 +88,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func donePressed(sender: AnyObject) {
-        let currentSequence = sequenceLabel.text;
-        
+        var currentSequence = sequenceLabel.text;
         
     }
     
@@ -98,7 +97,12 @@ class ViewController: UIViewController {
         sequenceLabel.text = "Choose Sequences";
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destinationViewController: codonAnswerController = segue.destinationViewController as! codonAnswerController;
+        
+        destinationViewController.codonInput = sequenceLabel.text!;
+        
+    }
 
 
 }

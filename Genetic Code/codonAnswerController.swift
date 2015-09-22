@@ -12,11 +12,20 @@ class codonAnswerController: UIViewController {
     
     @IBOutlet weak var codonAnswerLabel: UILabel!
     
+    var codonInput = "";
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         codonAnswerLabel.text = "answer";
         
+        codonAnswerLabel.text = codonTranslate(codonInput);
+        
     }
+    
+    func codonTranslate (codonIn: String) -> String{
+        return "TESTING";
+    }
+    
 
 }
