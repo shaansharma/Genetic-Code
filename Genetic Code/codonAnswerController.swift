@@ -24,6 +24,24 @@ class codonAnswerController: UIViewController {
     }
     
     func codonTranslate (codonIn: String) -> String{
+        
+        if (codonIn == "ttt") || (codonIn == "ttc"){
+            return "phe";
+        }
+        else if (codonIn == "tta") || (codonIn == "ttg") || (codonIn == "ctt") || (codonIn == "ctc") || (codonIn == "cta") || (codonIn == "ctg"){
+            return "leu";
+        }
+        else if (codonIn == "att") || (codonIn == "atc") || (codonIn == "ata"){
+            return "ile";
+        }
+        else if (codonIn == "atg"){
+            return "met";
+        }
+        else if (codonIn == "gtt") || (codonIn == "gta") || (codonIn == "gtg") {
+            return "val";
+        }
+        
+        
         return codonIn;
     }
     

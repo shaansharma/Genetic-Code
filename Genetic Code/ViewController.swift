@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
     @IBOutlet weak var tbutton: UIButton!
-    @IBOutlet weak var pButton: UIButton!
+    @IBOutlet weak var gButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var sequenceLabel: UILabel!
@@ -72,19 +72,20 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func pPressed(sender: AnyObject) {
+    @IBAction func gPressed(sender: AnyObject) {
         let currentText = sequenceLabel.text;
         let lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
-            sequenceLabel.text = "p";
+            sequenceLabel.text = "g";
         }
         else {
-            sequenceLabel.text = currentText! + "p";
+            sequenceLabel.text = currentText! + "g";
         }
 
     }
+
     
     
     @IBAction func donePressed(sender: AnyObject) {

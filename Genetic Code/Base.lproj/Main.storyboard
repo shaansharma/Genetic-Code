@@ -46,16 +46,6 @@
                                     <action selector="tPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8m-zl-Wqv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79O-f5-dZN">
-                                <rect key="frame" x="206" y="412" width="46" height="62"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="p">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6J-TS-Vr4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvd-hW-fbG">
                                 <rect key="frame" x="115" y="489" width="137" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
@@ -83,6 +73,16 @@
                                     <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDm-8D-F0V"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-LU-lSJ">
+                                <rect key="frame" x="206" y="420" width="45" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="g">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaO-lE-fAQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -92,7 +92,7 @@
                         <outlet property="aButton" destination="SEW-fz-RlC" id="Azy-j9-DnH"/>
                         <outlet property="cButton" destination="5K9-HG-uCN" id="74J-WA-Utw"/>
                         <outlet property="doneButton" destination="Lvd-hW-fbG" id="35V-Ef-Y34"/>
-                        <outlet property="pButton" destination="79O-f5-dZN" id="bf3-OA-bcC"/>
+                        <outlet property="gButton" destination="NaY-LU-lSJ" id="BdJ-JO-zdV"/>
                         <outlet property="resetButton" destination="acR-3h-jxu" id="aeR-wM-Iob"/>
                         <outlet property="sequenceLabel" destination="XVo-PD-oPK" id="T65-t8-gI8"/>
                         <outlet property="tbutton" destination="BIE-wD-wqJ" id="Cmx-Y7-PJD"/>
