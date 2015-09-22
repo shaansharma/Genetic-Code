@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     
     @IBAction func aPressed(sender: AnyObject) {
         
-        var currentText = sequenceLabel.text;
-        var lengthOfText = currentText?.characters.count;
+        let currentText = sequenceLabel.text;
+        let lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
@@ -45,8 +45,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func cPressed(sender: AnyObject) {
-        var currentText = sequenceLabel.text;
-        var lengthOfText = currentText?.characters.count;
+        let currentText = sequenceLabel.text;
+        let lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
@@ -59,8 +59,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tPressed(sender: AnyObject) {
-        var currentText = sequenceLabel.text;
-        var lengthOfText = currentText?.characters.count;
+        let currentText = sequenceLabel.text;
+        let lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
@@ -73,8 +73,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pPressed(sender: AnyObject) {
-        var currentText = sequenceLabel.text;
-        var lengthOfText = currentText?.characters.count;
+        let currentText = sequenceLabel.text;
+        let lengthOfText = currentText?.characters.count;
         
         if ((lengthOfText >= 3) || (lengthOfText == 0)){
             sequenceLabel.text = "";
@@ -88,7 +88,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func donePressed(sender: AnyObject) {
-        var currentSequence = sequenceLabel.text;
+        let currentSequence = sequenceLabel.text;
+        
         
     }
     
