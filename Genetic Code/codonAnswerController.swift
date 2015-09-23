@@ -85,6 +85,7 @@ class codonAnswerController: UIViewController {
         else {
             return "invalid sequence";
         }
+        
     }
     
 
