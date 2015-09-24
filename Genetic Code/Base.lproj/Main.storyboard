@@ -139,13 +139,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Translate"/>
                                 <connections>
+                                    <action selector="translatePressed" destination="beZ-ho-Qib" eventType="touchUpInside" id="fss-kh-Yde"/>
                                     <segue destination="SQA-b5-aVJ" kind="show" id="Qas-ty-QDT"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-Aq-Y9J">
-                                <rect key="frame" x="40" y="84" width="337" height="329"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="caatactgacac" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-Aq-Y9J">
+                                <rect key="frame" x="40" y="84" width="332" height="279"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -154,7 +154,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9op-rY-Mdg"/>
                     <navigationItem key="navigationItem" title="Sequence Translate" id="lHp-Wv-NBD"/>
                     <connections>
-                        <outlet property="squenceTextView" destination="i1q-Aq-Y9J" id="FoZ-Kw-dvs"/>
+                        <outlet property="sequenceTextView" destination="i1q-Aq-Y9J" id="C3t-cf-Oer"/>
                         <outlet property="translateButton" destination="n8r-mx-t70" id="pgj-Kh-zaZ"/>
                     </connections>
                 </viewController>
