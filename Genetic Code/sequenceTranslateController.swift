@@ -16,25 +16,31 @@ class sequenceTranslateController: UIViewController {
     @IBOutlet weak var translatedTextView: UITextView!
     
     @IBAction func translatePressed() {
-        let rawText: String = sequenceTextView.text;
+        
+        let rawText = sequenceTextView.text
+        let rawText2 = sequenceTextView.text as NSString;
+        
         
         if (rawText.characters.count % 3 != 0){
             translatedTextView.text = "Invalid Sequence";
         }
         
+        var newCodon = ""
+        
         for(var i: Int = 0; i < rawText.characters.count; i += 3){
-
-            var startIndex = rawText.startIndex.advancedBy(i)
-            var endIndex = rawText.startIndex.advancedBy(i+3)
             
-            var currentCodon = rawText.substringToIndex(startIndex)
+            let currentCodon = rawText2.substringWithRange(NSRange(location: i,length: 3))
+            
             print(currentCodon)
-//            currentCodon = currentCodon.removeAtIndex()
+            
+            let codonToAdd = codonTranslate(currentCodon)
+            
+            newCodon = newCodon + codonToAdd
             
         }
+        translatedTextView.text = ""
+        translatedTextView.text = newCodon
 
-        
-//        codonTranslate(<#T##codonIn: String##String#>)
     }
 
 }

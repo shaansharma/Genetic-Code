@@ -47,7 +47,7 @@ class codonAnswerController: UIViewController {
             return "Proline (pro)";
         }
         else if (codonIn == "act") || (codonIn == "acc") || (codonIn == "aca") || (codonIn == "acg"){
-            return "Theronine (thr)";
+            return "Threonine (thr)";
         }
         else if (codonIn == "gct") || (codonIn == "gcc") || (codonIn == "gca") || (codonIn == "gcg"){
             return "Alanine (ala)";
