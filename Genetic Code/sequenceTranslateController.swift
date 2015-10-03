@@ -14,6 +14,7 @@ class sequenceTranslateController: UIViewController {
     @IBOutlet weak var sequenceTextView: UITextView!
     @IBOutlet weak var translateButton: UIButton!
     @IBOutlet weak var translatedTextView: UITextView!
+    @IBOutlet weak var answerLabel: UILabel!
     
     @IBAction func translatePressed() {
         
@@ -38,8 +39,11 @@ class sequenceTranslateController: UIViewController {
             newCodon = newCodon + codonToAdd
             
         }
-        translatedTextView.text = ""
-        translatedTextView.text = newCodon
+//        translatedTextView.delegate = self
+//        translatedTextView.text = ""
+//        translatedTextView.text = newCodon
+        
+        answerLabel.text = newCodon;
 
     }
 
